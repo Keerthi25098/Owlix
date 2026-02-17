@@ -1,0 +1,95 @@
+/* ================= PAGE WRAPPER ================= */
+/* override parent content width */
+.content:has(.view-page) {
+  max-width: 1400px !important;
+  width: 95%;
+}
+
+.view-page {
+  width: 98%;
+  max-width: 1400px;      /* large professional width */
+  margin: 20px auto;
+ text-align: center;
+}
+
+/* TITLE */
+.view-page h2 {
+  margin-bottom: 22px;
+  font-size: 26px;
+  color: #27293D;
+}
+
+/* EMPTY TEXT */
+.no-employees {
+  color: #888;
+  font-size: 18px;
+}
+
+/* ================= TABLE ================= */
+
+.employee-table {
+  width: 100%;
+  min-width: 1100px;        /* forces table to be wide */
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+.employee-table thead {
+  background: linear-gradient(90deg,#2196F3,#00BFA6);
+  color: white;
+}
+
+.employee-table th {
+  padding: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* ROWS */
+.employee-table td {
+  padding: 18px;
+  font-size: 15px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+/* ROW HEIGHT */
+.employee-table tbody tr {
+  height: 60px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+/* HOVER EFFECT */
+.employee-table tbody tr:hover {
+  background: #f1f7ff;
+}
+
+/* ACTIVE SELECTED ROW */
+.active-row {
+  background: #e3f7f3 !important;
+  border-left: 5px solid #00BFA6;
+  font-weight: 500;
+}
+
+/* REMOVE LAST BORDER */
+.employee-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ================= SCROLL FOR SMALL SCREEN ================= */
+@media (max-width: 1200px) {
+
+  .view-page {
+    overflow-x: auto;
+  }
+
+  .employee-table {
+    min-width: 1000px;
+  }
+}

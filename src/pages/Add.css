@@ -1,0 +1,94 @@
+/* ================= ADD EMPLOYEE PAGE ================= */
+.add-page {
+  min-height: 100vh;
+  background: #F4F7FB; /* light dashboard background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  margin-bottom: 80px;
+  font-family:"Segoe UI",sans-serif;
+}
+
+
+/* ================= CARD ================= */
+.form-card {
+  background: #FFFFFF; /* clean white card */
+  padding: 40px 35px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  border: 1px solid #E4E8F0;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: all 0.25s ease;
+}
+
+.form-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+.form-card h2 {
+  margin-bottom: 25px;
+  color: #1E293B;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+/* ================= INPUTS ================= */
+.emp-form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #DCE1EA;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #F9FBFE;
+  color: #1E293B;
+  transition: all 0.25s ease;
+}
+
+.emp-form input::placeholder {
+  color: #94A3B8;
+}
+
+.emp-form input:focus {
+  border-color: #00BFA6; /* Owlora accent */
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(0,191,166,0.15);
+  outline: none;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #00BFA6; /* Owlora accent */
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 8px rgba(0,191,166,0.25);
+}
+
+.btn:hover {
+  background-color: #009E8A;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,191,166,0.3);
+}
+
+/* ================= RESPONSIVENESS ================= */
+@media (max-width: 480px) {
+  .form-card {
+    padding: 28px 20px;
+    max-width: 90%;
+  }
+  .btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
