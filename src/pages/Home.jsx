@@ -28,7 +28,7 @@ export default function Home() {
 
         {/* LEFT BRAND */}
         <div className="brand">
-          <span className="logo-text">EmployeeHUB</span>
+          <span className="logo-text">OwLix</span>
         </div>
 
         {/* CENTER MENU */}
